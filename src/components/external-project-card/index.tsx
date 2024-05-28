@@ -108,9 +108,7 @@ const ExternalProjectCard = ({
                       </div>
                     </div>
                   )}
-                  <h1 className="font-bold text-center mb-2">
-                    {item.title}
-                  </h1>
+                  <h1 className="font-bold text-center mb-2">{item.title}</h1>
                   <p className="mt-2 text-base-content text-opacity-60 text-sm text-center">
                     {item.description}
                   </p>

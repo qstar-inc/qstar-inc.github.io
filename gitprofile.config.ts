@@ -43,7 +43,7 @@ const CONFIG = {
         {
           title: 'Auto Vehicle Renamer',
           description:
-            'Renames most vehicles with it\'s origin information when it spawns.',
+            "Renames most vehicles with it's origin information when it spawns.",
           imageUrl:
             'https://modscontent.paradox-interactive.com/cities_skylines_2/7f2d546a-50bc-4864-96b1-c2a33ca4ec88/content/cover.jpg',
           link: 'https://mods.paradoxplaza.com/mods/79872/Windows',
@@ -80,7 +80,7 @@ const CONFIG = {
         {
           title: 'Company Mod - Paradox Interactive',
           description:
-            'Adds "Paradox Interactive" company and decals.',
+            "Adds \"Paradox Interactive\" company and decals.",
           imageUrl:
             'https://modscontent.paradox-interactive.com/cities_skylines_2/834ec2d3-b419-4dcf-8d7c-f235ccf720c5/content/cover.jpg',
           link: 'https://mods.paradoxplaza.com/mods/80939/Windows',
@@ -125,11 +125,10 @@ const CONFIG = {
     paypal: 'qounik',
     patreon: 'StarQGaming',
     discord: 'StarQ',
-    discordInvite: 'U2PSjUzUuF'
+    discordInvite: 'U2PSjUzUuF',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',
@@ -143,7 +142,7 @@ const CONFIG = {
     'MySQL',
     'Git',
     'Docker',
-    'C#'
+    'C#',
   ],
   // experiences: [
   //   {
@@ -183,8 +182,7 @@ const CONFIG = {
       to: '2012',
     },
   ],
-  publications: [
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: '', // medium | dev

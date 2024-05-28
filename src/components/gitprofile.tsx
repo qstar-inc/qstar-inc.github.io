@@ -256,8 +256,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                         }
                         googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                       />
-                        )}
-                      {sanitizedConfig.projects.external2.projects.length !==
+                    )}
+                    {sanitizedConfig.projects.external2.projects.length !==
                       0 && (
                       <ExternalProjectCard
                         loading={loading}
@@ -267,8 +267,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                         }
                         googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                       />
-                        )}
-                      {sanitizedConfig.projects.github.display && (
+                    )}
+                    {sanitizedConfig.projects.github.display && (
                       <GithubProjectCard
                         header={sanitizedConfig.projects.github.header}
                         limit={sanitizedConfig.projects.github.automatic.limit}
@@ -277,7 +277,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                         username={sanitizedConfig.github.username}
                         googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
                       />
-                      )}
+                    )}
                     {sanitizedConfig.publications.length !== 0 && (
                       <PublicationCard
                         loading={loading}
