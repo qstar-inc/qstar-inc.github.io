@@ -54,6 +54,10 @@ export const getSanitizedConfig = (
           header: config?.projects?.external?.header || 'My Projects',
           projects: config?.projects?.external?.projects || [],
         },
+        external2: {
+          header: config?.projects?.external2?.header || 'My Projects',
+          projects: config?.projects?.external2?.projects || [],
+        },
       },
       seo: {
         title: config?.seo?.title,
@@ -81,6 +85,10 @@ export const getSanitizedConfig = (
         skype: config?.social?.skype,
         telegram: config?.social?.telegram,
         researchGate: config?.social?.researchGate,
+        discord: config?.social?.discord,
+        discordInvite: config?.social?.discordInvite,
+        paypal: config?.social?.paypal,
+        patreon: config?.social?.patreon,
       },
       resume: {
         fileUrl: config?.resume?.fileUrl || '',

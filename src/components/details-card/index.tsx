@@ -18,6 +18,9 @@ import {
   FaStackOverflow,
   FaTelegram,
   FaYoutube,
+  FaPatreon,
+  FaPaypal,
+  FaDiscord
 } from 'react-icons/fa';
 import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
@@ -202,20 +205,20 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                 value={github.username}
                 link={`https://github.com/${github.username}`}
               />
-              {social?.researchGate && (
+              {social?.discord && social?.discordInvite && (
                 <ListItem
-                  icon={<SiResearchgate />}
-                  title="ResearchGate:"
-                  value={social.researchGate}
-                  link={`https://www.researchgate.net/profile/${social.researchGate}`}
+                  icon={<FaDiscord />}
+                  title="Discord:"
+                  value={social.discord}
+                  link={`https://www.discord.gg/${social.discordInvite}`}
                 />
               )}
               {social?.twitter && (
                 <ListItem
                   icon={<SiTwitter />}
-                  title="Twitter:"
+                  title="X:"
                   value={social.twitter}
-                  link={`https://twitter.com/${social.twitter}`}
+                  link={`https://x.com/${social.twitter}`}
                 />
               )}
               {social?.mastodon && (
@@ -224,14 +227,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Mastodon:"
                   value={getFormattedMastodonValue(social.mastodon, false)}
                   link={getFormattedMastodonValue(social.mastodon, true)}
-                />
-              )}
-              {social?.linkedin && (
-                <ListItem
-                  icon={<FaLinkedin />}
-                  title="LinkedIn:"
-                  value={social.linkedin}
-                  link={`https://www.linkedin.com/in/${social.linkedin}`}
                 />
               )}
               {social?.dribbble && (
@@ -250,6 +245,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://www.behance.net/${social.behance}`}
                 />
               )}
+              {social?.reddit && (
+                <ListItem
+                  icon={<FaReddit />}
+                  title="Reddit:"
+                  value={social.reddit}
+                  link={`https://www.reddit.com/user/${social.reddit}`}
+                />
+              )}
               {social?.facebook && (
                 <ListItem
                   icon={<FaFacebook />}
@@ -266,14 +269,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://www.instagram.com/${social.instagram}`}
                 />
               )}
-              {social?.reddit && (
-                <ListItem
-                  icon={<FaReddit />}
-                  title="Reddit:"
-                  value={social.reddit}
-                  link={`https://www.reddit.com/user/${social.reddit}`}
-                />
-              )}
               {social?.threads && (
                 <ListItem
                   icon={<FaSquareThreads />}
@@ -288,6 +283,22 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="YouTube:"
                   value={`@${social.youtube}`}
                   link={`https://www.youtube.com/@${social.youtube}`}
+                />
+              )}
+              {social?.linkedin && (
+                <ListItem
+                  icon={<FaLinkedin />}
+                  title="LinkedIn:"
+                  value={social.linkedin}
+                  link={`https://www.linkedin.com/in/${social.linkedin}`}
+                />
+              )}
+              {social?.researchGate && (
+                <ListItem
+                  icon={<SiResearchgate />}
+                  title="ResearchGate:"
+                  value={social.researchGate}
+                  link={`https://www.researchgate.net/profile/${social.researchGate}`}
                 />
               )}
               {social?.udemy && (
@@ -322,18 +333,20 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://stackoverflow.com/users/${social.stackoverflow}`}
                 />
               )}
-              {social?.website && (
+              {social?.patreon && (
                 <ListItem
-                  icon={<FaGlobe />}
-                  title="Website:"
-                  value={social.website
-                    .replace('https://', '')
-                    .replace('http://', '')}
-                  link={
-                    !social.website.startsWith('http')
-                      ? `http://${social.website}`
-                      : social.website
-                  }
+                  icon={<FaPatreon />}
+                  title="Patreon:"
+                  value={social.patreon}
+                  link={`https://www.patreon.com/${social.patreon}`}
+                />
+              )}
+              {social?.paypal && (
+                <ListItem
+                  icon={<FaPaypal />}
+                  title="Paypal:"
+                  value={social.paypal}
+                  link={`https://www.paypal.com/paypalme/${social.paypal}`}
                 />
               )}
               {social?.skype && (
@@ -366,6 +379,20 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Email:"
                   value={social.email}
                   link={`mailto:${social.email}`}
+                />
+              )}
+              {social?.website && (
+                <ListItem
+                  icon={<FaGlobe />}
+                  title="Website:"
+                  value={social.website
+                    .replace('https://', '')
+                    .replace('http://', '')}
+                  link={
+                    !social.website.startsWith('http')
+                      ? `http://${social.website}`
+                      : social.website
+                  }
                 />
               )}
             </Fragment>

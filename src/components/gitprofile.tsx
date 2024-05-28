@@ -195,7 +195,7 @@ const GitProfile = ({ config }: { config: Config }) => {
               appliedTheme={theme}
             />
             <div className={`p-4 lg:p-10 min-h-full ${BG_COLOR}`}>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 rounded-box">
                 <div className="col-span-1">
                   <div className="grid grid-cols-1 gap-6">
                     {!sanitizedConfig.themeConfig.disableSwitch && (
@@ -244,24 +244,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                     )}
                   </div>
                 </div>
-                <div className="lg:col-span-2 col-span-1">
+                <div className="md:col-span-3 col-span-1">
                   <div className="grid grid-cols-1 gap-6">
-                    {sanitizedConfig.projects.github.display && (
-                      <GithubProjectCard
-                        header={sanitizedConfig.projects.github.header}
-                        limit={sanitizedConfig.projects.github.automatic.limit}
-                        githubProjects={githubProjects}
-                        loading={loading}
-                        username={sanitizedConfig.github.username}
-                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                      />
-                    )}
-                    {sanitizedConfig.publications.length !== 0 && (
-                      <PublicationCard
-                        loading={loading}
-                        publications={sanitizedConfig.publications}
-                      />
-                    )}
                     {sanitizedConfig.projects.external.projects.length !==
                       0 && (
                       <ExternalProjectCard
@@ -271,6 +255,33 @@ const GitProfile = ({ config }: { config: Config }) => {
                           sanitizedConfig.projects.external.projects
                         }
                         googleAnalyticId={sanitizedConfig.googleAnalytics.id}
+                      />
+                        )}
+                      {sanitizedConfig.projects.external2.projects.length !==
+                      0 && (
+                      <ExternalProjectCard
+                        loading={loading}
+                        header={sanitizedConfig.projects.external2.header}
+                        externalProjects={
+                          sanitizedConfig.projects.external2.projects
+                        }
+                        googleAnalyticId={sanitizedConfig.googleAnalytics.id}
+                      />
+                        )}
+                      {sanitizedConfig.projects.github.display && (
+                      <GithubProjectCard
+                        header={sanitizedConfig.projects.github.header}
+                        limit={sanitizedConfig.projects.github.automatic.limit}
+                        githubProjects={githubProjects}
+                        loading={loading}
+                        username={sanitizedConfig.github.username}
+                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
+                      />
+                      )}
+                    {sanitizedConfig.publications.length !== 0 && (
+                      <PublicationCard
+                        loading={loading}
+                        publications={sanitizedConfig.publications}
                       />
                     )}
                     {sanitizedConfig.blog.display && (

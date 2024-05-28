@@ -85,8 +85,8 @@ interface ExternalProjects {
 
 interface Projects {
   github?: GitHubProjects;
-
   external?: ExternalProjects;
+  external2?: ExternalProjects;
 }
 
 interface SEO {
@@ -206,6 +206,26 @@ interface Social {
    * Email
    */
   email?: string;
+
+  /**
+   * Discord
+   */
+  discord?: string;
+
+  /**
+   * Discord Invite
+   */
+  discordInvite?: string;
+
+  /**
+   * Patreon
+   */
+  patreon?: string;
+
+  /**
+   * Paypal
+   */
+  paypal?: string;
 }
 
 interface Resume {

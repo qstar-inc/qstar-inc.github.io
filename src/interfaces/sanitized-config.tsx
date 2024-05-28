@@ -34,6 +34,7 @@ export interface SanitizedExternalProjects {
 export interface SanitizedProjects {
   github: SanitizedGitHubProjects;
   external: SanitizedExternalProjects;
+  external2: SanitizedExternalProjects;
 }
 
 export interface SanitizedSEO {
@@ -63,6 +64,10 @@ export interface SanitizedSocial {
   telegram?: string;
   phone?: string;
   email?: string;
+  discord?: string;
+  discordInvite?: string;
+  patreon?: string;
+  paypal?: string;
 }
 
 export interface SanitizedResume {

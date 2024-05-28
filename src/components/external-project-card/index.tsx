@@ -69,7 +69,7 @@ const ExternalProjectCard = ({
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="flex-1 card shadow-lg compact bg-base-100 cursor-pointer min-w-52 max-w-72"
         key={index}
         href={item.link}
         onClick={(e) => {
@@ -93,12 +93,9 @@ const ExternalProjectCard = ({
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
-                    {item.title}
-                  </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                      <div className="w-30 h-30 mask mask-square">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
@@ -111,7 +108,10 @@ const ExternalProjectCard = ({
                       </div>
                     </div>
                   )}
-                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                  <h1 className="font-bold text-center mb-2">
+                    {item.title}
+                  </h1>
+                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-center">
                     {item.description}
                   </p>
                 </div>
@@ -135,14 +135,14 @@ const ExternalProjectCard = ({
                     {loading ? (
                       skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
                     ) : (
-                      <span className="text-base-content opacity-70">
+                      <span className="text-base-content opacity-90">
                         {header}
                       </span>
                     )}
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="flex flex-wrap justify-center gap-6">
                     {loading ? renderSkeleton() : renderExternalProjects()}
                   </div>
                 </div>
