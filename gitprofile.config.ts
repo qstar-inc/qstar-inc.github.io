@@ -72,7 +72,7 @@ const CONFIG = {
         {
           title: 'Medium Office Zoning',
           description:
-            'Adds Mixed Residential buildings with office space at the bottom.',
+            'Adds Medium Density Office zoning using High Density Commercial buildings.',
           imageUrl:
             'https://modscontent.paradox-interactive.com/cities_skylines_2/9f058661-7af7-4e45-ba70-f5f49aa9019e/content/cover.jpg',
           link: 'https://mods.paradoxplaza.com/mods/83207/Windows',
@@ -112,6 +112,12 @@ const CONFIG = {
     external3: {
       header: 'Cities Skylines II Web Tools',
       projects: [
+        {
+          title: 'Discord Bot',
+          description: '',
+          imageUrl: '',
+          link: 'https://discord.com/oauth2/authorize?client_id=1138819493045489694',
+        },
         {
           title: 'Prefab Maker',
           description: '',
@@ -308,7 +314,7 @@ const CONFIG = {
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and 💚`,
+    >GitProfile</a> and 💚 from 🇧🇩`,
 
   enablePWA: false,
 };
