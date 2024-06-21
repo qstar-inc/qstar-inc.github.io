@@ -70,6 +70,14 @@ const CONFIG = {
           link: 'https://mods.paradoxplaza.com/mods/79021/Windows',
         },
         {
+          title: 'Medium Office Zoning',
+          description:
+            'Adds Mixed Residential buildings with office space at the bottom.',
+          imageUrl:
+            'https://modscontent.paradox-interactive.com/cities_skylines_2/9f058661-7af7-4e45-ba70-f5f49aa9019e/content/cover.jpg',
+          link: 'https://mods.paradoxplaza.com/mods/83207/Windows',
+        },
+        {
           title: 'Mixed Residential Office Zoning',
           description:
             'Adds Mixed Residential buildings with office space at the bottom.',
@@ -78,9 +86,15 @@ const CONFIG = {
           link: 'https://mods.paradoxplaza.com/mods/79067/Windows',
         },
         {
+          title: 'Real World Brands: Adobe',
+          description: 'Adds "Adobe" as a Software Company.',
+          imageUrl:
+            'https://modscontent.paradox-interactive.com/cities_skylines_2/6d030ee4-2e87-4b78-9961-3b342ef2d1e4/content/cover.jpg',
+          link: 'https://mods.paradoxplaza.com/mods/83168/Windows',
+        },
+        {
           title: 'Company Mod - Paradox Interactive',
-          description:
-            "Adds \"Paradox Interactive\" company and decals.",
+          description: 'Adds "Paradox Interactive" company and decals.',
           imageUrl:
             'https://modscontent.paradox-interactive.com/cities_skylines_2/834ec2d3-b419-4dcf-8d7c-f235ccf720c5/content/cover.jpg',
           link: 'https://mods.paradoxplaza.com/mods/80939/Windows',
@@ -92,6 +106,35 @@ const CONFIG = {
           imageUrl:
             'https://modscontent.paradox-interactive.com/cities_skylines_2/65b6eca0-b389-4cb4-af69-daac3dc270b1/content/cover.jpg',
           link: 'https://mods.paradoxplaza.com/mods/81625/Windows',
+        },
+      ],
+    },
+    external3: {
+      header: 'Cities Skylines II Web Tools',
+      projects: [
+        {
+          title: 'Prefab Maker',
+          description: '',
+          imageUrl: '',
+          link: 'https://qstar-inc.github.io/cities2-PrefabMaker/',
+        },
+        {
+          title: 'GUID Database',
+          description: '',
+          imageUrl: '',
+          link: 'https://qstar-inc.github.io/cities2-GUID-Database/',
+        },
+        {
+          title: 'Tidbits',
+          description: '',
+          imageUrl: '',
+          link: 'https://github.com/qstar-inc/Tidbits/tree/main/cities2',
+        },
+        {
+          title: 'Objects Browser',
+          description: '',
+          imageUrl: '',
+          link: 'https://qstar-inc.github.io/cities2-objects/',
         },
       ],
     },

@@ -35,6 +35,7 @@ export interface SanitizedProjects {
   github: SanitizedGitHubProjects;
   external: SanitizedExternalProjects;
   external2: SanitizedExternalProjects;
+  external3: SanitizedExternalProjects;
 }
 
 export interface SanitizedSEO {
