@@ -1,7 +1,7 @@
 <?php
 
 $baseUrl = 'https://qstar-inc.github.io/';
-$repo = "/";
+$repo = "";
 
 return [
     'production' => true,
