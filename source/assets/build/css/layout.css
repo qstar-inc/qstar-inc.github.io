@@ -2,23 +2,19 @@
   background-image: linear-gradient(var(--color-starq), #ffffff00) !important;
   background-color: unset !important;
 }
-
 .discord-link {
   color: #2ce1ff !important;
   flex-grow: 1;
   text-align: center;
   font-size: 120%;
 }
-
 .discord-link:hover {
   color: #5865f2 !important;
 }
-
 #lets-connect {
   width: 100vw;
   background-image: linear-gradient(#fff0, var(--color-starq)) !important;
 }
-
 #modding-bot {
   width: 100vw;
   background-image: linear-gradient(
@@ -27,12 +23,10 @@
     #fff0
   ) !important;
 }
-
 #sites {
   width: 100vw;
   background-image: linear-gradient(#fff0, #065371, #fff0) !important;
 }
-
 .mod-base {
   width: 47.3%;
   min-width: 650px;
