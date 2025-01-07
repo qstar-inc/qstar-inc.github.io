@@ -52,20 +52,17 @@
 .mod-text-icon {
   height: 5vh;
 }
-
 .site-image {
   width: 40vw;
   margin: auto;
   min-width: 30rem !important;
   box-shadow: 0 0 1vw 1vh rgba(0, 0, 0, 0.7);
 }
-
 .site-btn {
   width: 50%;
   margin: auto;
   min-width: 20rem !important;
 }
-
 .sm {
   height: 40px;
   margin: auto !important;
