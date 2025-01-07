@@ -1,0 +1,72 @@
+.navbar.bg-primary {
+  background-image: linear-gradient(var(--color-starq), #ffffff00) !important;
+  background-color: unset !important;
+}
+
+.discord-link {
+  color: #2ce1ff !important;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 120%;
+}
+
+.discord-link:hover {
+  color: #5865f2 !important;
+}
+
+#lets-connect {
+  width: 100vw;
+  background-image: linear-gradient(#fff0, var(--color-starq)) !important;
+}
+
+#modding-bot {
+  width: 100vw;
+  background-image: linear-gradient(
+    #fff0,
+    var(--color-starq),
+    #fff0
+  ) !important;
+}
+
+#sites {
+  width: 100vw;
+  background-image: linear-gradient(#fff0, #065371, #fff0) !important;
+}
+
+.mod-base {
+  width: 47.3%;
+  min-width: 650px;
+  border: 1px solid #5d28d6;
+}
+.mod-image-div {
+  min-width: 200px;
+  height: 200px;
+}
+.mod-image {
+  width: 200px;
+  height: 200px;
+}
+.mod-text {
+  height: 200px;
+}
+.mod-text-icon {
+  height: 5vh;
+}
+
+.site-image {
+  width: 40vw;
+  margin: auto;
+  min-width: 30rem !important;
+  box-shadow: 0 0 1vw 1vh rgba(0, 0, 0, 0.7);
+}
+
+.site-btn {
+  width: 50%;
+  margin: auto;
+  min-width: 20rem !important;
+}
+
+.sm {
+  height: 40px;
+  margin: auto !important;
+}

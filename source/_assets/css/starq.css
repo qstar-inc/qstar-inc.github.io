@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+
+.belanosima-regular {
+  font-family: "Belanosima", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.belanosima-semibold {
+  font-family: "Belanosima", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.belanosima-bold {
+  font-family: "Belanosima", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  --color-starq: #663399;
+  --color-starq-subtle: #a36dda;
+  color: var(--bs-light, #ffffff00) !important;
+  font-family: "Belanosima", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden-text {
+  display: inline-block;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: text-shadow 0.2s, color 0.2s;
+  user-select: none;
+}
+
+.hidden-text.revealed {
+  background: none;
+  color: inherit;
+  text-shadow: none;
+  cursor: default;
+}
+
+#mail,
+#mail > * {
+  color: orange !important;
+}
+
+.mainbox {
+  width: calc(50% - 0.5rem);
+}
+@media (max-width: 1000px) {
+  .mainbox {
+    width: 100%;
+  }
+}
+
+.collapse {
+  visibility: unset;
+}
