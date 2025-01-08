@@ -57,18 +57,19 @@
                 </div>
             </div>
             <h4 class="h4 fs-2 text-center">Cities: Skylines II</h4>
-            <div class="d-flex flex-wrap flex-column mb-4 gap-2 mx-4 justify-content-center">
+            <div class="d-flex flex-wrap flex-column mb-2 gap-2 mx-4 justify-content-center">
                 <div class="d-flex flex-wrap flex-column mb-4 gap-2 mx-4 justify-content-center">
                     <img class="site-image" src="{{ $page->images }}/site/assetDatbase.png" />
                     <p class="fs-4 text-center">A complete asset database for all vanilla, DLC and modded assets.</p>
                     <a class="site-btn btn btn-info text-dark fs-3" href="https://qstar-inc.github.io/cities2-AssetDatabase/" target="_blank">Asset Database</a>
                 </div>
-                <div class="d-flex flex-wrap flex-row mb-4 gap-2 mx-4 justify-content-center">
+                <div class="d-flex flex-wrap flex-row gap-2 mx-4 justify-content-center">
                     <div><a class="btn btn-info text-dark fs-3" href="https://qstar-inc.github.io/cities2-PrefabMaker/" target="_blank">Prefab Maker</a></div>
                     <div><a class="btn btn-info text-dark fs-3" href="https://qstar-inc.github.io/cities2-GUID-Database/" target="_blank">GUID Database</a></div>
                     <div><a class="btn btn-info text-dark fs-3" href="https://qstar-inc.github.io/cities2-objects/" target="_blank">Object Browser</a></div>
                 </div>
             </div>
+            <p class="fs-4 mb-4 text-center">and many other private/deprecated sites.</p>
         </div>
         {{-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
